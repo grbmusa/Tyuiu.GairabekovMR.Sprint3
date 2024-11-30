@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Tyuiu.GairabekovMR.Sprint3.Task0.V28.Lib\Tyuiu.GairabekovMR.Sprint3.Task0.V28.Lib.csproj" />
   </ItemGroup>
 
