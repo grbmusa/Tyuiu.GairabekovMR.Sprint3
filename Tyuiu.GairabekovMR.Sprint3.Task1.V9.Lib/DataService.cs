@@ -1,8 +1,9 @@
 ﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint3;
 
 namespace Tyuiu.GairabekovMR.Sprint3.Task1.V9.Lib
 {
-    public class DataService
+     public class DataService : ISprint3Task1V9
     {
         public double CalculateProduct(int x)
         {
@@ -16,6 +17,11 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task1.V9.Lib
             }
 
             return Math.Round(p, 3);
+        }
+
+        public double GetMultiplySeries(int value, int startValue, int stopValue)
+        {
+            throw new NotImplementedException();
         }
     }
 }
