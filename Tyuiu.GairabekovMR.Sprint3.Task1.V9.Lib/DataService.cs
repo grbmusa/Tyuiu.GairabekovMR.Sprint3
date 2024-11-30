@@ -12,7 +12,8 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task1.V9.Lib
 
             while (k <= 4)
             {
-                double term = Math.Pow(300.0 / (Math.Cos(x) + Math.Pow(x, k)), k);
+                double denominator = Math.Cos(x) + Math.Pow(x, k);
+                double term = Math.Pow(300.0 / denominator, k);
                 p *= term;
                 k++;
             }
@@ -26,4 +27,3 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task1.V9.Lib
         }
     }
 }
-
