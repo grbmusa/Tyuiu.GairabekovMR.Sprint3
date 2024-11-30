@@ -1,9 +1,9 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint3;
+﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint3;
 
 namespace Tyuiu.GairabekovMR.Sprint3.Task4.V19.Lib
 {
     public class DataService : ISprint3Task4V19
-
     {
         public DataService()
         {
@@ -18,9 +18,16 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task4.V19.Lib
                 {
                     break;
                 }
+
+                double denominator = Math.Cos(x) + x;
+                if (denominator != 0)
+                {
+                    res *= (x / denominator + 0.5);
+                }
                 else
                 {
-                    res = res * (x / (Math.Cos(x) + x) + 0.5);
+                    
+                    throw new DivideByZeroException("Denominator became zero, cannot divide.");
                 }
             }
             return Math.Round(res, 3);
