@@ -28,4 +28,3 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task4.V19.Lib
     }
 }
 
-//res = res * ((x / Math.Cos(x) + x) + 0.5);
