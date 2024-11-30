@@ -5,25 +5,21 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task1.V9.Lib
 {
     public class DataService : ISprint3Task1V9
     {
-        public double CalculateProduct(int x)
+        
+
+        public double GetMultiplySeries(int x, int start, int stop)
         {
             double p = 1;
-            int k = 1;
 
-            while (k <= 4)
+            for (int k = start; k <= stop; k++)
             {
                 double denominator = Math.Cos(x) + Math.Pow(x, k);
                 double term = Math.Pow(300.0 / denominator, k);
                 p *= term;
-                k++;
             }
 
             return Math.Round(p, 3);
         }
-
-        public double GetMultiplySeries(int value, int startValue, int stopValue)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
+

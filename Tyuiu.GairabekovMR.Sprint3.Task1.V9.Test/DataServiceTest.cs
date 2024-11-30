@@ -11,7 +11,7 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task1.V9.Test
             DataService ds = new DataService();
             double expected = 5815.752; // ќжидаемое значение
             double actual = ds.CalculateProduct(5);
-            Assert.AreEqual(expected, actual, 0.001);
+            Assert.That(actual, Is.EqualTo(expected).Within(0.001));
         }
     }
 }
