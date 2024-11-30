@@ -12,8 +12,8 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task1.V9.Lib
 
             while (k <= 4)
             {
-                // Исправление формулы
-                p *= Math.Pow(300.0 / (Math.Cos(x) + Math.Pow(x, k)), k);
+                double term = Math.Pow(300.0 / (Math.Cos(x) + Math.Pow(x, k)), k);
+                p *= term;
                 k++;
             }
 
