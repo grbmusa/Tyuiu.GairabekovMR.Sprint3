@@ -18,6 +18,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.GairabekovMR.Sprint3.Task0.V28.Lib\Tyuiu.GairabekovMR.Sprint3.Task0.V28.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="tyuiu.cources.programming.interfaces">
+      <HintPath>..\tyuiu.cources.programming.interfaces.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="NUnit.Framework" />
   </ItemGroup>
 
