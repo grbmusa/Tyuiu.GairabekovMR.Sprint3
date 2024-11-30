@@ -3,7 +3,7 @@ using tyuiu.cources.programming.interfaces.Sprint3;
 
 namespace Tyuiu.GairabekovMR.Sprint3.Task1.V9.Lib
 {
-     public class DataService : ISprint3Task1V9
+    public class DataService : ISprint3Task1V9
     {
         public double CalculateProduct(int x)
         {
@@ -12,7 +12,8 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task1.V9.Lib
 
             while (k <= 4)
             {
-                p *= Math.Pow(300 / (Math.Cos(x) + Math.Pow(x, k)), k);
+                // Исправление формулы
+                p *= Math.Pow(300.0 / (Math.Cos(x) + Math.Pow(x, k)), k);
                 k++;
             }
 
