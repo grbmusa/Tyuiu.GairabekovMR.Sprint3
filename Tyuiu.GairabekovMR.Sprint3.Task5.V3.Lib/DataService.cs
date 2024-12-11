@@ -7,7 +7,7 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib
     {
         public double Calculate(int startValue, int stopValue)
         {
-            return 0; // Временно оставим заглушку
+            return 0; 
         }
 
         public double GetSumSumSeries(int a, int b, int c, int d, int x)
