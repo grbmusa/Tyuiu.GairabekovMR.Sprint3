@@ -16,24 +16,9 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Test
             int d = 11;
             int x = 5;
 
-            double expected = 33.247; 
+            double expected = 33.247; // Ожидаемое значение
             double actual = ds.GetSumSumSeries(a, b, c, d, x);
             Assert.AreEqual(expected, actual);
-        }
-
-        private double CalculateExpectedSum(int a, int b, int c, int d, int x)
-        {
-            double y = 0;
-
-            for (int i = a; i <= b; i++)
-            {
-                for (int k = c; k <= d; k++)
-                {
-                    y += (Math.Sin(k) + x) / x;
-                }
-            }
-
-            return Math.Round(y, 3);
         }
     }
 }
