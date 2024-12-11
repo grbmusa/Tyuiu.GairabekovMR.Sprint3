@@ -7,18 +7,22 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib
     {
         public double GetSumSumSeries(int a, int b, int c, int d, int x)
         {
-            double sumSeries = 0;
+            double result = 0;
 
-            // Ensure correct order of arguments for the loop
-            for (int i = Math.Min(a, b); i <= Math.Max(a, b); i++)
+            for (int i = a; i <= b; i++)
             {
-                for (int k = Math.Min(c, d); k <= Math.Max(c, d); k++)
+                for (int k = c; k <= d; k++)
                 {
-                    sumSeries += (Math.Sin(k) + x) / x;
+                    result += Math.Sin(k) + x / (double)x;
                 }
             }
 
-            return Math.Round(sumSeries, 3);
+            return Math.Round(result, 3);
+        }
+
+        public double Calculate(int startValue, int stopValue)
+        {
+            return 0; 
         }
     }
 }
