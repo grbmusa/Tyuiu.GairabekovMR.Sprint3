@@ -20,11 +20,19 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3
             Console.WriteLine("* Написать программу, которая вычисляет значение y по формуле, при x=5    *");
             Console.WriteLine("***************************************************************************");
 
-            double x = 5;
-            double result = ds.CalculateY(x);
+            Console.WriteLine("Введите значения для a, b, c, d и x:");
+
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = Convert.ToInt32(Console.ReadLine());
+            int d = Convert.ToInt32(Console.ReadLine());
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            double result = ds.GetSumSumSeries(a, b, c, d, x);
 
             Console.WriteLine("Результат: " + result);
         }
     }
 }
+
 

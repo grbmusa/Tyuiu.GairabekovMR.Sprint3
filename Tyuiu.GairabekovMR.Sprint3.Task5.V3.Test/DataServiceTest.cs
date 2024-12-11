@@ -7,22 +7,27 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void CalculateY_Valid()
+        public void GetSumSumSeries_Valid()
         {
             DataService ds = new DataService();
-            double x = 5;
-            double expected = CalculateExpectedY(x);
-            double actual = ds.CalculateY(x);
+            int a = 1;
+            int b = 3;
+            int c = 1;
+            int d = 11;
+            int x = 5;
+
+            double expected = CalculateExpectedSum(a, b, c, d, x);
+            double actual = ds.GetSumSumSeries(a, b, c, d, x);
             Assert.AreEqual(expected, actual);
         }
 
-        private double CalculateExpectedY(double x)
+        private double CalculateExpectedSum(int a, int b, int c, int d, int x)
         {
             double y = 0;
 
-            for (int i = 1; i <= 3; i++)
+            for (int i = a; i <= b; i++)
             {
-                for (int k = 1; k <= 11; k++)
+                for (int k = c; k <= d; k++)
                 {
                     y += (Math.Sin(k) + x) / x;
                 }
@@ -32,4 +37,5 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Test
         }
     }
 }
+
 

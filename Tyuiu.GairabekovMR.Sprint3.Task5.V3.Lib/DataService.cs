@@ -1,16 +1,24 @@
 ﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint3;
 
 namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib
 {
-    public class DataService
+    
+    
+    public class DataService : ISprint3Task4V19
     {
-        public double CalculateY(double x)
+        public double Calculate(int startValue, int stopValue)
+        {
+            throw new NotImplementedException();
+        }
+
+        public double GetSumSumSeries(int a, int b, int c, int d, int x)
         {
             double y = 0;
 
-            for (int i = 1; i <= 3; i++)
+            for (int i = a; i <= b; i++)
             {
-                for (int k = 1; k <= 11; k++)
+                for (int k = c; k <= d; k++)
                 {
                     y += (Math.Sin(k) + x) / x;
                 }
@@ -20,4 +28,5 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib
         }
     }
 }
+
 
