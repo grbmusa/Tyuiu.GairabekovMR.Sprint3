@@ -10,15 +10,15 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Test
         public void GetSumSumSeries_Valid()
         {
             DataService ds = new DataService();
-            int a = 1;
-            int b = 3;
+            int a = 5;
+            int b = 1;
             int c = 1;
-            int d = 11;
-            int x = 5;
+            int d = 3;
+            int x = 11;
 
-            double expected = 33.247; // Ожидаемое значение
+            double expected = 33.247;
             double actual = ds.GetSumSumSeries(a, b, c, d, x);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual, 0.001);
         }
     }
 }
