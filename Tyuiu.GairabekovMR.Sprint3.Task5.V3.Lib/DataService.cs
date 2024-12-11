@@ -7,12 +7,7 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib
     {
         public double Calculate(int startValue, int stopValue)
         {
-            double result = 0;
-            for (int x = startValue; x >= stopValue; x--)
-            {
-                result += Math.Pow(x, 2) / Math.Sin(x);
-            }
-            return Math.Round(result, 3);
+            return 0; // Временно оставим заглушку
         }
 
         public double GetSumSumSeries(int a, int b, int c, int d, int x)
@@ -22,7 +17,7 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib
             {
                 for (int k = c; k <= d; k++)
                 {
-                    result += (Math.Sin(k) + x) / x;
+                    result += Math.Sin(k);
                 }
             }
             return Math.Round(result, 3);
