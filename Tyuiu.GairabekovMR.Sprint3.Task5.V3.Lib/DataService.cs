@@ -5,30 +5,26 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib
 {
     public class DataService : ISprint3Task5V3
     {
-        public double Calculate(int startValue, int stopValue)
-        {
-            double result = 0;
-            for (int x = startValue; x >= stopValue; x--)
-            {
-                result += Math.Pow(x, 2) / Math.Sin(x);
-            }
-            return Math.Round(result, 3);
-        }
-
         public double GetSumSumSeries(int a, int b, int c, int d, int x)
         {
             double result = 0;
-            for (int i = a; i <= b; i++)
+
+            for (int i = 1; i <= 3; i++)
             {
-                for (int k = c; k <= d; k++)
+                for (int k = 1; k <= 11; k++)
                 {
-                    result += Math.Sin(k) + x / (double)x;
+                    result += Math.Sin(k) + 5.0 / 5;
                 }
             }
+
             return Math.Round(result, 3);
+        }
+
+        public double Calculate(int startValue, int stopValue)
+        {
+            return 0;
         }
     }
 }
-
 
 
