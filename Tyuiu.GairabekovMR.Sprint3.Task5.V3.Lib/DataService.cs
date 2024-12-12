@@ -9,11 +9,11 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib
         {
             double result = 0;
 
-            for (int i = 3; i >= 1; i--)
+            for (int i = 1; i <= 3; i++)
             {
-                for (int k = 11; k >= 1; k--)
+                for (int k = 1; k <= 11; k++)
                 {
-                    result += Math.Sin(k) + 1.005;
+                    result += Math.Sin(k) + 0.8;
                 }
             }
 
