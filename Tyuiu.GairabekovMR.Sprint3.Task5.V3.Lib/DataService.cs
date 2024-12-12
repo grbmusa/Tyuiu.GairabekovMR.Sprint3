@@ -13,7 +13,7 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib
             {
                 for (int k = 1; k <= 11; k++)
                 {
-                    result += Math.Sin(k) + 1.0;
+                    result += Math.Sin(k) + 0.91;
                 }
             }
 
