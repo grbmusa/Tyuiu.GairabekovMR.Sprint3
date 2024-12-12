@@ -1,32 +1,32 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint3;
 
-namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib
+namespace Tyuiu.GairabekovMR.Sprint3.Task4.V19.Lib
 {
-    public class DataService : ISprint3Task5V3
+    public class DataService : ISprint3Task4V19
     {
         public double Calculate(int startValue, int stopValue)
         {
-            double result = 0;
-            for (int x = startValue; x >= stopValue; x--)
+            double res = 1;
+            for (int x = startValue; x <= stopValue; x++)
             {
-                result += Math.Pow(x, 2) / Math.Sin(x);
-            }
-            return Math.Round(result, 3);
-        }
-
-        public double GetSumSumSeries(int a, int b, int c, int d, int x)
-        {
-            double result = 0;
-            for (int i = a; i <= b; i++)
-            {
-                for (int k = c; k <= d; k++)
+                if (x == 0)
                 {
-                    result += (Math.Sin(k) + x) / (double)x;
+                    break;
+                }
+                else
+                {
+                    res = res * (x / (Math.Cos(x) + x) + 0.5);
                 }
             }
-            return Math.Round(result, 3);
+            return Math.Round(res, 3);
         }
     }
 }
+
+//res = res * ((x / Math.Cos(x) + x) + 0.5);
 
