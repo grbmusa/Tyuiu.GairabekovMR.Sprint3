@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="DataService.cs~RF2ded81.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="tyuiu.cources.programming.interfaces">
       <HintPath>..\tyuiu.cources.programming.interfaces.dll</HintPath>
     </Reference>
