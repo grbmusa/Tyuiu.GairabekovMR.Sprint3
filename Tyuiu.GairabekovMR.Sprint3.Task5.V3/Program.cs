@@ -1,37 +1,39 @@
 ﻿using Tyuiu.GairabekovMR.Sprint3.Task5.V3.Lib;
 
-namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3
+public class Program
 {
-    internal class Program
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            DataService ds = new DataService();
-
-            Console.Title = "Спринт #3 | Выполнил: Гайрабеков М.Р. | ИИПб-24-2";
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: Цикл for                                                          *");
-            Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #3                                                              *");
-            Console.WriteLine("* Выполнил: Гайрабеков Муса Рамзанович | ИИПб-24-2                         *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет значение y по формуле, при x=5    *");
-            Console.WriteLine("***************************************************************************");
-
-            Console.WriteLine("Введите значения для a, b, c, d и x:");
-
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-            int c = Convert.ToInt32(Console.ReadLine());
-            int d = Convert.ToInt32(Console.ReadLine());
-            int x = Convert.ToInt32(Console.ReadLine());
-
-            double result = ds.GetSumSumSeries(a, b, c, d, x);
-
-            Console.WriteLine("Результат: " + result);
-        }
+        DataService ds = new();
+        Console.Title = "Спринт #3 | Выполнил: Гайрабеков М.Р. | ИИПб 24-2";
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* Спринт #3                                                                ");
+        Console.WriteLine("* Тема: Вложенные циклы                                                    ");
+        Console.WriteLine("* Задание #5                                                               ");
+        Console.WriteLine("* Вариант #3                                                               ");
+        Console.WriteLine("* Выполнил: Гайрабеков Муса Рамзанович | ИИПб 24-2                         ");
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* УСЛОВИЕ:                                                                 ");
+        Console.WriteLine("* y = (sin(k) + x) / x при х = 5                                           ");
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* Введите значние х:                                                       ");
+        int x = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("* Введите значние y:                                                       ");
+        int y = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("* Введите значние w:                                                       ");
+        int w = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("* Введите значние z:                                                       ");
+        int z = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("* Введите значние i:                                                       ");
+        int i = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("*                                                                          ");
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* РЕЗУЛЬТАТ:                                                               ");
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine(ds.GetSumSumSeries(x, y, w, z, i));
+        Console.ReadKey();
     }
 }
 
