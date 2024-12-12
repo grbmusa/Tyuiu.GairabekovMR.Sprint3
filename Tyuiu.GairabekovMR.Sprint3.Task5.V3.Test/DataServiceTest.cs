@@ -7,17 +7,26 @@ namespace Tyuiu.GairabekovMR.Sprint3.Task5.V3.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void GetSumSumSeries_Valid()
+        public void ValidGetSumSumSeries()
         {
             DataService ds = new DataService();
 
-            double expected = 33.247;
-            double actual = ds.GetSumSumSeries(5, 1, 1, 3, 11);
+            int x = 5;
+            int startValue1 = 1;
+            int stopValue1 = 3;
+            int startValue2 = 1;
+            int stopValue2 = 11;
 
-            Assert.AreEqual(expected, actual, 0.001);
+            double res = ds.GetSumSumSeries(x, startValue1, stopValue1, startValue2, stopValue2);
+
+            double wait = 33.247; 
+
+            Assert.AreEqual(wait, res);
         }
     }
 }
+
+
 
 
 
