@@ -1,19 +1,31 @@
-﻿using Tyuiu.GairabekovMR.Sprint3.Task4.V19.Lib;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using tyuiu.cources.programming.interfaces.Sprint3;
 
-namespace Tyuiu.GairabekovMR.Sprint3.Task4.V19.Test
+namespace Tyuiu.GairabekovMR.Sprint3.Task4.V19.Lib
 {
-    [TestClass]
-    public class DataServiceTest
+    public class DataService : ISprint3Task4V19
     {
-        [TestMethod]
-        public void CheckCalculate()
+        public double Calculate(int startValue, int stopValue)
         {
-            DataService ds = new DataService();
-            int startValue = -5;
-            int stopValue = 5;
-            double res = ds.Calculate(startValue, stopValue);
-            double wait = 9.432;
-            Assert.AreEqual(wait, res);
+            double res = 1;
+            for (int x = startValue; x <= stopValue; x++)
+            {
+                if (x == 0)
+                {
+                    break;
+                }
+                else
+                {
+                    res = res * (x / (Math.Cos(x) + x) + 0.5);
+                }
+            }
+            return Math.Round(res, 3);
         }
     }
 }
+
+//res = res * ((x / Math.Cos(x) + x) + 0.5);
